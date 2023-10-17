@@ -17,7 +17,7 @@ const queryClient = new QueryClient();
 
 const AppProviders = () => {
   return (
-    <Router> {/* Tambahkan komponen Router di sini */}
+    <Router>
       <ThemeProvider>
         <GlobalStyle />
         <GlobalErrorBoundary>
@@ -33,7 +33,6 @@ const AppProviders = () => {
                       <PersonalizationProvider>
                         <Switch> {/* Gunakan komponen Switch untuk rute */}
                           <Route path="/" component={AppRoutes} />
-                          {/* Tambahkan rute-rute lain di sini */}
                         </Switch>
                       </PersonalizationProvider>
                     </SnackbarProvider>
@@ -44,7 +43,7 @@ const AppProviders = () => {
           </main>
         </GlobalErrorBoundary>
       </ThemeProvider>
-    </Router> {/* Tutup komponen Router */}
+    </Router> 
   );
 };
 
