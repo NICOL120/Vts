@@ -1,7 +1,7 @@
 {
   "name": "@enterprise/app",
   "version": "0.1.0",
-  "homepage":"https://vtszepro.vercel.app/",
+  "homepage": ".",
   "private": true,
   "scripts": {
     "build": "react-app-rewired build",
@@ -54,7 +54,7 @@
     "react-hook-form": "^7.34.2",
     "react-query": "^3.39.2",
     "react-router": "^6.3.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
     "react-use": "^17.4.0",

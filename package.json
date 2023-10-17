@@ -1,7 +1,7 @@
 {
   "name": "enterprise",
   "version": "1.0.0",
-  "homepage":"https://vtszepro.vercel.app/",
+  "homepage": ".",
   "private": true,
   "description": "",
   "license": "ISC",
