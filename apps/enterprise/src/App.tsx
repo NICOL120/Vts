@@ -11,34 +11,40 @@ import { GlobalErrorBoundary } from 'errors/components/GlobalErrorBoundary';
 import { TransactionsProvider } from 'chain/transactions';
 import { ThemeProvider } from 'lib/ui/theme/ThemeProvider';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Import React Router components
+
 const queryClient = new QueryClient();
 
 const AppProviders = () => {
   return (
-
-    <ThemeProvider>
-      <GlobalStyle />
-      <GlobalErrorBoundary>
-        <main>
-          <QueryClientProvider client={queryClient}>
-            <NetworkGuard>
-              <TransactionsProvider>
-                <TransactionErrorProvider>
-                  <SnackbarProvider
-                    autoHideDuration={null}
-                    content={(key, message) => <SnackbarContainer id={key} message={message} />}
-                  >
-                    <PersonalizationProvider>
-                      <AppRoutes />
-                    </PersonalizationProvider>
-                  </SnackbarProvider>
-                </TransactionErrorProvider>
-              </TransactionsProvider>
-            </NetworkGuard>
-          </QueryClientProvider>
-        </main>
-      </GlobalErrorBoundary>
-    </ThemeProvider>
+    <Router> {/* Tambahkan komponen Router di sini */}
+      <ThemeProvider>
+        <GlobalStyle />
+        <GlobalErrorBoundary>
+          <main>
+            <QueryClientProvider client={queryClient}>
+              <NetworkGuard>
+                <TransactionsProvider>
+                  <TransactionErrorProvider>
+                    <SnackbarProvider
+                      autoHideDuration={null}
+                      content={(key, message) => <SnackbarContainer id={key} message={message} />}
+                    >
+                      <PersonalizationProvider>
+                        <Switch> {/* Gunakan komponen Switch untuk rute */}
+                          <Route path="/" component={AppRoutes} />
+                          {/* Tambahkan rute-rute lain di sini */}
+                        </Switch>
+                      </PersonalizationProvider>
+                    </SnackbarProvider>
+                  </TransactionErrorProvider>
+                </TransactionsProvider>
+              </NetworkGuard>
+            </QueryClientProvider>
+          </main>
+        </GlobalErrorBoundary>
+      </ThemeProvider>
+    </Router> {/* Tutup komponen Router */}
   );
 };
 
