@@ -7,7 +7,7 @@
     "@aws-sdk/util-dynamodb": "^3.159.0",
     "@terra-money/feather.js": "^1.0.4",
     "@types/node": "^16.11.56",
-    "axios": "^0.27.2",
+    "axios": "^1.6.3",
     "big.js": "^6.2.1",
     "d3-array": "^3.2.0",
     "date-fns": "^2.29.2",
