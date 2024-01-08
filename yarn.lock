@@ -87,7 +87,7 @@ __metadata:
     "@terra-money/feather.js": ^1.0.4
     "@types/d3-array": ^3.0.3
     "@types/node": ^16.11.56
-    axios: ^0.27.2
+    axios: ^1.6.5
     big.js: ^6.2.1
     d3-array: ^3.2.0
     date-fns: ^2.29.2
@@ -2627,7 +2627,7 @@ __metadata:
     "@terra-money/feather.js": ^1.0.4
     "@types/d3-array": ^3.0.3
     "@types/node": ^16.11.56
-    axios: ^0.27.2
+    axios: ^1.6.5
     big.js: ^6.2.1
     d3-array: ^3.2.0
     date-fns: ^2.29.2
@@ -2651,7 +2651,7 @@ __metadata:
     "@types/memoizee": ^0.4.8
     "@types/node": ^16.11.56
     aws-lambda: ^1.0.7
-    axios: ^1.4.0
+    axios: ^1.6.5
     big.js: ^6.2.1
     date-fns: ^2.29.2
     dotenv: ^16.0.1
@@ -6196,6 +6196,17 @@ __metadata:
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
   checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "axios@npm:1.6.5"
+  dependencies:
+    follow-redirects: ^1.15.4
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: e28d67b2d9134cb4608c44d8068b0678cfdccc652742e619006f27264a30c7aba13b2cd19c6f1f52ae195b5232734925928fb192d5c85feea7edd2f273df206d
   languageName: node
   linkType: hard
 
@@ -9847,6 +9858,16 @@ __metadata:
     debug:
       optional: true
   checksum: faa66059b66358ba65c234c2f2a37fcec029dc22775f35d9ad6abac56003268baf41e55f9ee645957b32c7d9f62baf1f0b906e68267276f54ec4b4c597c2b190
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.4
+  resolution: "follow-redirects@npm:1.15.4"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: e178d1deff8b23d5d24ec3f7a94cde6e47d74d0dc649c35fc9857041267c12ec5d44650a0c5597ef83056ada9ea6ca0c30e7c4f97dbf07d035086be9e6a5b7b6
   languageName: node
   linkType: hard
 
